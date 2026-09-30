@@ -1,0 +1,35 @@
+Lab 04
+Task 1 - Prolog Unification
+
+14 ?- house = house.
+true.
+
+15 ?- house = abc.
+false.
+
+16 ?- edge(a,b) = edge(C,b).
+C = a.
+
+17 ?- edge(a,d) = edge(C,B).
+C = a,
+B = d.
+
+18 ?- edge(C,B) = edge(a,d).
+C = a,
+B = d.
+
+19 ?- edge(A,f(g,h)) = edge(a,B).
+A = a,
+B = f(g, h).
+
+20 ?- edge(A,A) = edge(b,c).
+false.
+
+21 ?- edge(A,A) = edge(b,b).
+A = b.
+
+22 ?- A = B, B = f.
+A = B, B = f.
+
+23 ?- A = B, B = f, A = e.
+false.

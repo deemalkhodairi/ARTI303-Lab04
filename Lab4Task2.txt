@@ -1,0 +1,26 @@
+Lab 04
+Task 2 - Variables in Prolog
+
+24 ?- consult(['c:/Users/deem1/Desktop/familyTask2.pl']).
+true.
+
+25 ?- female(X).
+X = sara ;
+X = nora.
+
+26 ?- male(_).
+true .
+
+27 ?- parent(Grandparent, Parent), parent(Parent, faisal).
+Grandparent = ali,
+Parent = muhammad .
+
+28 ?- parent(ahmad, Daughter), female(Daughter).
+Daughter = sara ;
+Daughter = nora .
+
+29 ?- parent(Parent, ahmad), parent(Parent, muhammad).
+Parent = ali.
+
+30 ?- parent(Parent, khan), parent(Parent, nora), male(khan).
+Parent = ahmad.
